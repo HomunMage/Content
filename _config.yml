@@ -22,9 +22,9 @@ title: HomunMage
 email: homunmage@gmail.com
 url: https://homunmage.posetmage.com # the base hostname & protocol for your site, e.g. http://example.com
 
-description: Notes
-baseurl: /Notes # the subpath of your site, e.g. /blog
-repository: homunmage/Notes
+description: Content
+baseurl: /Content # the subpath of your site, e.g. /blog
+repository: homunmage/Content
 
 defaults:
   -
