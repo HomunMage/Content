@@ -2,9 +2,11 @@
 
 <div class="slide">
 
-## LangGraph-GUI
+## LangGraph-GUI by SvelteFlow (ReactFlow)
 
 <img src="https://langgraph-gui.github.io/cover.webp" width="600">
+
+repo: [https://github.com/LangGraph-GUI/LangGraph-GUI](https://github.com/LangGraph-GUI/LangGraph-GUI)
 
 </div>
 
@@ -17,18 +19,44 @@ like dify, Coze, n8n.....
 
 and self-host, more flexibity, use langgraph
 
+* dify
+  * <img src="https://framerusercontent.com/images/7IPPObp2xkFVLH1IyW9QvFQ0a2I.gif" width="400">
+* coze
+  * <img src="https://pbs.twimg.com/media/GP5rEiZaEAAUqWu?format=jpg&name=4096x4096" width="400">
+* n8n
+  * <img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot-readme.png" width="400">
+
 </div>
 
 <div class="slide">
 
-## Why Choose ReactFlow
+## What I want (LangGraph)
 
+<img src="https://www.js-craft.io/wp-content/uploads/2025/03/langchain-vs-langgraph.webp" width="500">
+
+</div>
+
+<div class="slide">
+
+## My Design
+
+* use Node to represent Edges
+
+<img src="./node_in_json.webp" width="400"><img src="./node_in_ts.webp" width="300">
+
+
+</div>
+
+
+<div class="slide">
+
+## Choose ReactFlow
 
 <img src="https://user-images.githubusercontent.com/3797215/156259138-fb9f59f8-52f2-474a-b78c-6570867e4ead.svg" height="300">
 
+* React have large ecosystem and community
 * Graph GUI with node edge design
 * flexibity enough for make it as editor
-* large community support
 
 </div>
 
@@ -40,7 +68,7 @@ and self-host, more flexibity, use langgraph
 [LangGraph-GUI-reactflow](https://github.com/LangGraph-GUI/LangGraph-GUI-reactflow)
 
 ### Hard to make SSOT
-* need redux, useContext both exist, hard to sync by order
+* hard to sync Redux and Context
 * data update flow cannot align SSOT design
 * not only nodes, but also edges need update seperatly
 
@@ -79,9 +107,23 @@ ReactFlow is not affinity with React
 
 <div class="slide">
 
-## End
+## END
 
-Thank you.
+Thank You
 
 </div>
+
+
+<div class="slide">
+
+## Reference
+* reactflow, svelteflow websites
+* https://www.js-craft.io/blog/langchain-vs-langgraph/
+* https://framerusercontent.com/images/7IPPObp2xkFVLH1IyW9QvFQ0a2I.gif
+* https://pbs.twimg.com/media/GP5rEiZaEAAUqWu?format=jpg&name=4096x4096
+* https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot-readme.png
+
+</div>
+
+
 
