@@ -1,0 +1,25 @@
+<script src="https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js"></script>
+
+<div class="mermaid">
+%% Code for flowchart below
+graph LR
+    SSOT[Nodes]
+
+    A[Modify Nodes]
+    B[Modify Edges]
+
+    A --modify--> SSOT
+    B --update--> SSOT
+    SSOT --update--> edges
+
+    graphs[graphs.json]
+    backend[Backend]
+
+    SSOT --store--> graphs
+    graphs --> backend
+
+  graphs --load--> SSOT
+
+
+</div>
+
