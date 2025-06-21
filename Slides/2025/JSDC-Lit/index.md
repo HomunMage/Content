@@ -1,10 +1,14 @@
-# Let's Play with Lit 3! Using AI to Help Write Web Components
+
 
 <div class="slide">
 
-origin Jekyll example: [ https://jekyll.github.io/minima/ ](https://jekyll.github.io/minima/)
+## Lit3
 
-my Jekyll blog exmaple: https://homun.posetmage.com/Tools/OS/Container/MediaTool/
+Let's Play with Lit 3! Using AI to Help Write Web Components
+
+origin Jekyll: [ https://jekyll.github.io/minima/ ](https://jekyll.github.io/minima/)
+
+my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaTool/](https://homun.posetmage.com/Tools/OS/Container/MediaTool/)
 
 </div>
 
@@ -29,32 +33,44 @@ my Jekyll blog exmaple: https://homun.posetmage.com/Tools/OS/Container/MediaTool
 
 </div>
 
-
-<div class="slide">
-
-## Benefit of Lit (web component)
-* Highly Reusable
-* Progressive like Vue
-* Lightweight Bundle Size
-* No virtual DOM overhead
-* Entirely written in TypeScript
-
-## Cons of Lit
-* small eco
-* higher learning curve
-
-</div>
-
-
-
 <div class="slide">
 
 ## Why choose Lit
 
-<div class="embed_youtube" yt-title="在你不知道的角落，前端的未来正在回归本源" yt-url="J_xIxliB0Jo" yt-width="700">Loading content...
-</div>
+  <div class="embed_youtube" yt-title="在你不知道的角落，前端的未来正在回归本源" yt-url="J_xIxliB0Jo" yt-width="700">Loading content...
+  </div>
 
 </div>
+
+<div class="slide">
+
+## Pros and Cons
+* Pros of Lit
+  * Highly Reusable
+  * Progressive like Vue
+  * Lightweight Bundle Size
+  * No virtual DOM overhead
+  * Entirely written in TypeScript
+
+* Cons of Lit
+  * small eco
+  * higher learning curve
+
+</div>
+
+<div class="slide">
+
+## Svelte
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg
+" style="background-color: white; height: 100px;">
+
+my origin lit3 wc: [https://github.com/PosetMage/cdn/tree/main/lit3](https://github.com/PosetMage/cdn/tree/main/lit3)
+
+my svelte ver wc: [https://github.com/PosetMage/wc](https://github.com/PosetMage/wc)
+
+
+</div>
+
 
 
 
