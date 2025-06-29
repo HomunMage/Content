@@ -22,7 +22,7 @@ my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaToo
   * W3C defines what Web Components are.
 
 #### What is Web Components ? <img src="https://avatars.githubusercontent.com/u/1905708" style="background-color: white; height: 32px;">
-  * Web Components = Custom Elements + Shadow DOM + HTML Templates
+  * Web Components = **Custom Elements** + **Shadow DOM** + **HTML Templates**
   * Encapsulated, reusable UI building blocks
   * Interoperable across frameworks or vanilla HTML
   * Supported in modern browsers, polyfilled if necessary
@@ -47,7 +47,7 @@ my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaToo
 ## Pros and Cons
 * Pros of Lit
   * Highly Reusable
-  * Progressive like Vue
+  * <span style="font-size: 1.5em;">Progressive like Vue</span>
   * Lightweight Bundle Size
   * No virtual DOM overhead
   * Entirely written in TypeScript
@@ -55,6 +55,7 @@ my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaToo
 * Cons of Lit
   * small eco
   * higher learning curve
+  * cannot tailwind
 
 </div>
 
