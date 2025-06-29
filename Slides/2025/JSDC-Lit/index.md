@@ -2,15 +2,26 @@
 
 <div class="slide">
 
-## Lit3
+## Let's Play with Lit 3! Using AI to Help Write Web Components
 
-Let's Play with Lit 3! Using AI to Help Write Web Components
+<img src="https://lit.dev/images/logo.svg" style="background-color: white; height: 300px; border: 10px solid white;">
+
+
+</div>
+
+<div class="slide">
+
+## My Examples
+
 
 origin Jekyll: [ https://jekyll.github.io/minima/ ](https://jekyll.github.io/minima/)
 
 my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaTool/](https://homun.posetmage.com/Tools/OS/Container/MediaTool/)
 
+
+
 </div>
+
 
 
 <div class="slide">
@@ -21,7 +32,9 @@ my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaToo
   * W3C (World Wide Web Consortium)
   * W3C defines what Web Components are.
 
-#### What is Web Components ? <img src="https://avatars.githubusercontent.com/u/1905708" style="background-color: white; height: 32px;">
+<img src="https://avatars.githubusercontent.com/u/1905708" style="background-color: white; height: 64px;">
+
+#### What is Web Components ? 
   * Web Components = **Custom Elements** + **Shadow DOM** + **HTML Templates**
   * Encapsulated, reusable UI building blocks
   * Interoperable across frameworks or vanilla HTML
