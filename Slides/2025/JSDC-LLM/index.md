@@ -1,4 +1,18 @@
-# use SvelteFlow to create AI workflow visualized node-edge graph GUI editor
+---
+title: use SvelteFlow to create AI workflow visualized node-edge graph GUI editor
+---
+
+
+<div class="slide">
+
+## use SvelteFlow to create AI workflow
+<p style="font-size: 2em;"> visualized node-edge graph GUI editor</p>
+
+
+<img src="https://langgraph-gui.github.io/cover.webp" width="700">
+
+</div>
+
 
 <div class="slide">
 
@@ -19,22 +33,16 @@ and self-host, more flexibity, use langgraph
 
 <div class="slide">
 
-## What I want (LangGraph)
+## Similar Base libs
+
+<img src="./crew-ai.webp" width="400">
 
 <img src="https://www.js-craft.io/wp-content/uploads/2025/03/langchain-vs-langgraph.webp" width="500">
 
 </div>
 
 
-<div class="slide">
 
-## LangGraph-GUI
-
-<img src="https://langgraph-gui.github.io/cover.webp" width="600">
-
-repo: [https://github.com/LangGraph-GUI/LangGraph-GUI](https://github.com/LangGraph-GUI/LangGraph-GUI)
-
-</div>
 
 
 <div class="slide">
@@ -47,7 +55,7 @@ repo: [https://github.com/LangGraph-GUI/LangGraph-GUI](https://github.com/LangGr
 
 * node design
 
-<img src="./node_in_ts.webp" width="350"><img src="./node_in_json.webp" width="450">
+<img src="./node_in_ts.webp" width="350">
 
 
 </div>
@@ -55,7 +63,7 @@ repo: [https://github.com/LangGraph-GUI/LangGraph-GUI](https://github.com/LangGr
 
 <div class="slide">
 
-### make SSOT
+## make SSOT
 * hard to sync Redux and Context
 * data update flow cannot align SSOT design
 * not only nodes, but also edges need update seperatly
@@ -77,29 +85,37 @@ redux is not affinity with React
 * SvelteFlow 1.0 highly affinity svelt 5
   * use rune, signals features
 
-
 </div>
 
 
 <div class="slide">
+
+## Simple Demo
+
+  
+  <div class="embed_youtube" yt-title="simple demo" yt-url="QpJ37k8yquA" yt-width="700">demo
+  </div>
+  
+
+</div>
+
+
+
+<div class="slide">
+
 
 ## END
 
-Thank You
+<p style="font-size: 3em;">Thank You</p>
+
+* Reference
+  * reactflow, svelteflow websites
+  * https://docs.crewai.com/en/introduction
+  * https://www.js-craft.io/blog/langchain-vs-langgraph/
+  * https://framerusercontent.com/images/7IPPObp2xkFVLH1IyW9QvFQ0a2I.gif
+  * https://pbs.twimg.com/media/GP5rEiZaEAAUqWu?format=jpg&name=4096x4096
+  * https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot-readme.png
 
 </div>
 
-
-<div class="slide">
-
-## Reference
-* reactflow, svelteflow websites
-* https://www.js-craft.io/blog/langchain-vs-langgraph/
-* https://framerusercontent.com/images/7IPPObp2xkFVLH1IyW9QvFQ0a2I.gif
-* https://pbs.twimg.com/media/GP5rEiZaEAAUqWu?format=jpg&name=4096x4096
-* https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot-readme.png
-
-</div>
-
-
-
+<script src="https://posetmage.com/cdn/js/EmbedYoutubeVideo.js">
