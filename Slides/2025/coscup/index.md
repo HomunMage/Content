@@ -2,110 +2,124 @@
 title: Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
 ---
 
-
 <div class="slide">
 
-## Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
+## Self-hosted AI Workflow Visualization with LangGraph-GUI & CrewAI-GUI
 
 
 <img src="https://langgraph-gui.github.io/cover.webp" style="height: 400px;"><img src="https://raw.githubusercontent.com/LangGraph-GUI/CrewAI-GUI-Qt/refs/heads/main/frontend.webp" style="height: 400px;">
 
-
-
-</div>
-
-<div class="slide">
-
-## Why Starting the repo
-
-* Want support local GPU, ex: Ollama
-* Most solutions cannot do custmize of the software itself
-* Want support LangGraph
-* Want selfhost with Docker Compose and Kubernetes
-* dify
-  * <img src="https://framerusercontent.com/images/7IPPObp2xkFVLH1IyW9QvFQ0a2I.gif" width="600">
-* coze
-  * <img src="https://pbs.twimg.com/media/GP5rEiZaEAAUqWu?format=jpg&name=4096x4096" width="600">
-* n8n
-  * <img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot-readme.png" width="600">
-
+* Interactive, local-first GUIs for building and monitoring AI pipelines
+* Fully customizable: swap models, agents, and frameworks
+* Deployable via Docker Compose or Kubernetes
 
 </div>
 
 
+<div class="slide">
+
+## Motivation & Goals
+
+1. **Local GPU Support** (e.g., Ollama)
+2. **Full Customization** of UI and backend logic
+3. **LangGraph Compatibility** for flexible graph-based workflows
+4. **Easy Deployment** with Docker Compose and Kubernetes
+
+* Other similar software
+  * dify
+    * <img src="https://framerusercontent.com/images/7IPPObp2xkFVLH1IyW9QvFQ0a2I.gif" width="600">
+    * https://framerusercontent.com/images/7IPPObp2xkFVLH1IyW9QvFQ0a2I.gif
+  * coze
+    * <img src="https://pbs.twimg.com/media/GP5rEiZaEAAUqWu?format=jpg&name=4096x4096" width="600">
+    * https://pbs.twimg.com/media/GP5rEiZaEAAUqWu
+  * n8n
+    * <img src="https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot-readme.png" width="600">
+    * https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot-readme.png
+
+
+</div>
+
 
 <div class="slide">
 
-## Why not CrewAI
+## Why Not CrewAI-GUI?
 
-pros:
-CrewAI is freidnly for begineer understand about AI Agent concept
+<img src="../JSDC-LLM//crew-ai.webp" height="200">
 
-cons:
-* crewAi too many hidden steps, and abstract too many layer, 
-* update will deprecate old code
+* **Pros:** 
+  * Beginner-friendly introduction to AI agents
+  * LangGraph, LangChain resource not friendly to green hands
+* **Cons:**
+
+  * Abstracts too many steps (limited visibility)
+  * Frequent updates may breaks existing code
 
 <img src="crewai-fail.webp" width="600">
 
-
-
 </div>
+
 
 <div class="slide">
 
-## Why not LangChain
+## Why Not LangChain?
 
+* **Modularity:** Tool usage is isolated, hard to combine
+* **Fragility:** Breaking changes across versions
+* **Abstraction:** Layers obscure data flow
 <img src="abadon-langchain.webp" width="600">
-
-LangChain's tool actually just single usage, cannot combine with other component, only demo example code can work
-
-any change, combine to other bricks will fail
-
-and also have similar problem like CrewAI, too many abstract layer, update break laster version code
-
-
+[why we no longer use LangChain for building our AI agents](https://octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
 
 </div>
+
 
 <div class="slide">
 
-## LangGraph
+## Why Choose LangGraph
 
-better decouple design, just care about graph,
+* **Graph-Centric Design**: Focus on nodes and edges
+* **Model-Agnostic**: Plug in any LLM or agent
+* **Composable**: Mix-and-match components seamlessly
 
-you can replace any LLM handler, any agent
-
-
+* Learning Resource:
+  * [LangGraph-GUI/LangGraph-learn](https://github.com/LangGraph-GUI/LangGraph-learn)
 
 </div>
+
+
 
 <div class="slide">
 
 ## Design of LangGraph-GUI
 
-use json to tranmit for frontend, backend
+1. **JSON Contract**: text based, easy to decouple
+2. **Frontend Agnostic**: ReactFlow, SvelteFlow, or custom
+3. **Backend Flexible**: Python, etc.
+4. **Extensible**: Add custom properties via `ext:` fields
 
-easy to change any side, such frtonend proting from ReactFlow to SvelteFlow
+</div>
 
-backend and change any framework also
 
-you can extend the json by the ```ext: ``` feilds
+<div class="slide">
+
+## Demo Video of LangGraph-GUI
 
 
 </div>
 
+
+<div class="slide">
+
+## python tools
+fastapi
+
+
+</div>
 
 
 
 <div class="slide">
 
-## END
+## Thank You!
 
-Thank You
 
 </div>
-
-
-
-
-<script src="https://posetmage.com/cdn/js/EmbedYoutubeVideo.js">
