@@ -1,3 +1,6 @@
+---
+title: Let's Play with Lit 3! Using AI to Help Write Web Components
+---
 
 
 <div class="slide">
