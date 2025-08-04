@@ -18,6 +18,14 @@ title: Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
 
 <div class="slide">
 
+## LangGraph-GUI Demo
+
+
+</div>
+
+
+<div class="slide">
+
 ## Motivation & Goals
 
 1. **Local GPU Support** (e.g., Ollama)
@@ -42,7 +50,20 @@ title: Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
 
 <div class="slide">
 
-## Why Not CrewAI-GUI?
+## First attempts - CrewAI-Qt
+
+<img src="../JSDC-LLM//crew-ai.webp" height="200">
+
+Build CrewAI-GUI with pyside6
+
+<img src="./crewai-gui.gif">
+
+
+</div>
+
+<div class="slide">
+
+## Why Not CrewAI?
 
 <img src="../JSDC-LLM//crew-ai.webp" height="200">
 
@@ -99,18 +120,17 @@ title: Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
 </div>
 
 
-<div class="slide">
-
-## Demo Video of LangGraph-GUI
-
-
-</div>
 
 
 <div class="slide">
 
-## python tools
-fastapi
+## python backend
+
+flask -> fastapi
+
+Flask is friendly to beginner
+
+FastAPI is better performance
 
 
 </div>
