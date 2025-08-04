@@ -65,17 +65,13 @@ Build CrewAI-GUI with pyside6
 
 ## Why Not CrewAI?
 
-<img src="../JSDC-LLM//crew-ai.webp" height="200">
-
 * **Pros:** 
   * Beginner-friendly introduction to AI agents
   * LangGraph, LangChain resource not friendly to green hands
 * **Cons:**
-
   * Abstracts too many steps (limited visibility)
   * Frequent updates may breaks existing code
-
-<img src="crewai-fail.webp" width="600">
+  * <img src="crewai-fail.webp" width="600">
 
 </div>
 
