@@ -9,19 +9,10 @@ title: Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
 
 <img src="https://langgraph-gui.github.io/cover.webp" style="height: 400px;"><img src="https://raw.githubusercontent.com/LangGraph-GUI/CrewAI-GUI-Qt/refs/heads/main/frontend.webp" style="height: 400px;">
 
-* Interactive, local-first GUIs for building and monitoring AI pipelines
-* Fully customizable: swap models, agents, and frameworks
-* Deployable via Docker Compose or Kubernetes
 
 </div>
 
 
-<div class="slide">
-
-## LangGraph-GUI Demo
-
-
-</div>
 
 
 <div class="slide">
@@ -32,6 +23,8 @@ title: Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
 2. **Full Customization** of UI and backend logic
 3. **LangGraph Compatibility** for flexible graph-based workflows
 4. **Easy Deployment** with Docker Compose and Kubernetes
+
+other tool usually limited shape, you cannot drag some node to any node you want
 
 * Other similar software
   * dify
@@ -50,11 +43,29 @@ title: Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
 
 <div class="slide">
 
+## SimpleDemo of LangGraph-GUI
+
+* visulization, low code, easy to prompt
+* simple for dev tools
+
+
+</div>
+
+
+
+
+<div class="slide">
+
 ## First attempts - CrewAI-Qt
+
+Build CrewAI-GUI with pyside6
+
+* **Pros** of CrewAI : 
+  * Beginner-friendly introduction to AI agents
+  * LangGraph, LangChain resource not friendly to green hands
 
 <img src="../JSDC-LLM//crew-ai.webp" height="200">
 
-Build CrewAI-GUI with pyside6
 
 <img src="./crewai-gui.gif">
 
@@ -65,10 +76,8 @@ Build CrewAI-GUI with pyside6
 
 ## Why Not CrewAI?
 
-* **Pros:** 
-  * Beginner-friendly introduction to AI agents
-  * LangGraph, LangChain resource not friendly to green hands
-* **Cons:**
+
+* **Cons** of CrewAI : 
   * Abstracts too many steps (limited visibility)
   * Frequent updates may breaks existing code
   * <img src="crewai-fail.webp" width="600">
@@ -76,14 +85,27 @@ Build CrewAI-GUI with pyside6
 </div>
 
 
+
+<div class="slide">
+
+## Abadon PyQt
+
+- **Containerization Challenges:** Qt-based UIs proved unreliable when deployed in Docker/Kubernetes.
+- **Frontend Modernization:** Switched from PySide6 to a React-based UI for faster iteration and broader ecosystem support.
+- **Architecture Validation:** Demonstrated our JSON-contract design lets us swap out frontends with zero backend changes.
+</div>
+
 <div class="slide">
 
 ## Why Not LangChain?
 
-* **Modularity:** Tool usage is isolated, hard to combine
+Both langchain and  crewai are Fragility
+
+* **Not Modularity:** Tool usage is isolated, hard to combine
 * **Fragility:** Breaking changes across versions
-* **Abstraction:** Layers obscure data flow
+* **Bad Abstraction:** Layers obscure data flow
 <img src="abadon-langchain.webp" width="600">
+
 [why we no longer use LangChain for building our AI agents](https://octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
 
 </div>
@@ -93,15 +115,25 @@ Build CrewAI-GUI with pyside6
 
 ## Why Choose LangGraph
 
-* **Graph-Centric Design**: Focus on nodes and edges
-* **Model-Agnostic**: Plug in any LLM or agent
-* **Composable**: Mix-and-match components seamlessly
+* Pros of LangGraph:
+  * **Graph-Centric Design**: Focus on nodes and edges
+  * **Model-Agnostic**: Plug in any LLM or agent
+  * **Composable**: Mix-and-match components seamlessly
+
+* My core recommand reason:
+  * state machine concept align to LLM
+  * very native
+  * elegant, can loop, condition to change branch
+
 
 * Learning Resource:
   * [LangGraph-GUI/LangGraph-learn](https://github.com/LangGraph-GUI/LangGraph-learn)
 
-</div>
+moreover we can do graph in graph like small agent but just use origin keywords
 
+
+
+</div>
 
 
 <div class="slide">
@@ -117,20 +149,31 @@ Build CrewAI-GUI with pyside6
 
 
 
-
 <div class="slide">
 
 ## python backend
 
-flask -> fastapi
-
-Flask is friendly to beginner
-
-FastAPI is better performance
-
+- **Framework Upgrade:** Started with Flask for its simplicity, then migrated to FastAPI for async support and superior performance.  
+- **Declarative Routing:** Leveraged Python decorators to keep endpoint definitions clean and self-documented.  
+- **Modular Extensions:** Easy to add features—JWT authentication, per-user workspaces, custom middleware.  
+- **Developer-Friendly:** Clear JSON contract and pluggable modules make onboarding and iteration a breeze.
 
 </div>
 
+
+<div class="slide">
+
+## DevOps
+
+* Support Kubernetes
+  * Ollama in NV-container
+
+* Support Docker Compose
+  * easy for local debug 
+
+
+
+</div>
 
 
 <div class="slide">
