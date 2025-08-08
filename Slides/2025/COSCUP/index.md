@@ -11,6 +11,8 @@ title: Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
 
 slide link: https://homun.posetmage.com/Content/Slides/2025/COSCUP/
 
+</div>
+
 <div class="slide">
 
 ## LangGraph-GUI Demo
@@ -68,7 +70,7 @@ Build CrewAI-GUI with pyside6
 <img src="./crewai-gui.gif">
 
 
-<img src="https://raw.githubusercontent.com/LangGraph-GUI/CrewAI-GUI-Qt/refs/heads/main/frontend.webp" style="height: 400px;"></div>
+<img src="https://raw.githubusercontent.com/LangGraph-GUI/CrewAI-GUI-Qt/refs/heads/main/frontend.webp" style="height: 400px;">
 
 </div>
 
