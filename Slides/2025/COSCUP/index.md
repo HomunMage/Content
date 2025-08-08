@@ -13,6 +13,16 @@ title: Selfhosted Visualizing AI Workflows with LangGraph-GUI & CrewAI-GUI
 </div>
 
 
+<div class="slide">
+
+## LangGraph-GUI Demo
+
+<img src="./langgraph-gui-demo.gif">
+
+* visulization, low code, easy to prompt
+* simple for dev tools
+
+</div>
 
 
 <div class="slide">
@@ -40,16 +50,6 @@ other tool usually limited shape, you cannot drag some node to any node you want
 
 </div>
 
-
-<div class="slide">
-
-## SimpleDemo of LangGraph-GUI
-
-* visulization, low code, easy to prompt
-* simple for dev tools
-
-
-</div>
 
 
 
@@ -93,6 +93,15 @@ Build CrewAI-GUI with pyside6
 - **Containerization Challenges:** Qt-based UIs proved unreliable when deployed in Docker/Kubernetes.
 - **Frontend Modernization:** Switched from PySide6 to a React-based UI for faster iteration and broader ecosystem support.
 - **Architecture Validation:** Demonstrated our JSON-contract design lets us swap out frontends with zero backend changes.
+
+* frontend change:
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Python_and_Qt.svg/164px-Python_and_Qt.svg.png" width="50">
+-> <img src="https://avatars.githubusercontent.com/u/5429470?" width="50">
+-> <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg" width="50"> 
+-> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" width="50"> 
+
+
 </div>
 
 <div class="slide">
@@ -145,6 +154,19 @@ moreover we can do graph in graph like small agent but just use origin keywords
 3. **Backend Flexible**: Python, etc.
 4. **Extensible**: Add custom properties via `ext:` fields
 
+* other design: subgraph:
+
+<img src="subgraph.webp" width="300">
+
+
+</div>
+
+<div class="slide">
+
+## Extend Ability
+
+<img src="./extend-demo.gif">
+
 </div>
 
 
@@ -157,6 +179,9 @@ moreover we can do graph in graph like small agent but just use origin keywords
 - **Declarative Routing:** Leveraged Python decorators to keep endpoint definitions clean and self-documented.  
 - **Modular Extensions:** Easy to add features—JWT authentication, per-user workspaces, custom middleware.  
 - **Developer-Friendly:** Clear JSON contract and pluggable modules make onboarding and iteration a breeze.
+
+
+<img src="https://cdn.prod.website-files.com/63d926b37ec0d886c2d5d538/66bb668df8a571178f9bbe61_66964499d8592c7ca862b5ff_Flask-vs-FastAPI.png" width="400"><br/>image source: https://www.imaginarycloud.com/blog/flask-vs-fastapi
 
 </div>
 
