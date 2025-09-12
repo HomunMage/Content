@@ -1,10 +1,10 @@
 ---
-title: use SvelteFlow to create AI workflow visualized node-edge graph GUI editor
+title: Use SvelteFlow to Create AI Workflow Visualized Node-Edge Graph GUI Editor
 ---
 
 <div class="slide">
 
-## visualized node-edge graph GUI editor
+## Use SvelteFlow to Create AI Workflow Visualized Node-Edge Graph GUI Editor
 
 <img src="https://langgraph-gui.github.io/cover.webp" width="700">
 
@@ -33,6 +33,8 @@ and self-host, more flexibity, use langgraph
 ## Similar Base libs
 
 <img src="./crew-ai.webp" width="300"><img src="https://www.js-craft.io/wp-content/uploads/2025/03/langchain-vs-langgraph.webp" width="300">
+
+But all of these not have official GUI, we need create by ourself.
 
 </div>
 
@@ -80,6 +82,8 @@ LangGraph-GUI 1.0 using reactflow
   * not only nodes, but also edges need update seperatly
 * Code lines more longer
 * most js libs use signals now but react not
+
+<img src="./reactflow.webp">
 
 </div>
 
