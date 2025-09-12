@@ -70,7 +70,7 @@ title: Let's Play with Web Components
 
 * Can compiled with vite
   * very easy to set github-actions
-* align with svelte
+* align with svelte eco
 
 </div>
 
@@ -86,10 +86,7 @@ my svelte ver wc: [https://github.com/PosetMage/wc](https://github.com/PosetMage
 
 my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaTool/](https://homun.posetmage.com/Tools/OS/Container/MediaTool/)
 
-
-
 </div>
-
 
 <div class="slide">
 

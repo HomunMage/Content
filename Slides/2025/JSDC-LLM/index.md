@@ -2,11 +2,9 @@
 title: use SvelteFlow to create AI workflow visualized node-edge graph GUI editor
 ---
 
-
 <div class="slide">
 
 ## visualized node-edge graph GUI editor
-
 
 <img src="https://langgraph-gui.github.io/cover.webp" width="700">
 
@@ -47,6 +45,13 @@ xyflow is mature js library (svelteflow, reactflow)
 
 <img src="https://user-images.githubusercontent.com/2857535/279644026-a01c231c-6c6e-4b41-96e0-a85c75c9acee.svg#gh-dark-mode-only">
 
+* use Node to represent Edges
+<iframe class="my-iframe" width="700" height="200" src="dataflow.html" style="background-color: white; display: inline;"></iframe>
+
+* node design
+
+<img src="./node_in_ts.webp" width="350">
+
 </div>
 
 
@@ -69,10 +74,12 @@ xyflow is mature js library (svelteflow, reactflow)
 
 LangGraph-GUI 1.0 using reactflow
 
-### Hard to make SSOT
-* hard to sync Redux and React Context
-* data update flow cannot align SSOT design
-* not only nodes, but also edges need update seperatly
+* Hard to make SSOT
+  * hard to sync Redux and React Context
+  * data update flow cannot align SSOT design
+  * not only nodes, but also edges need update seperatly
+* Code lines more longer
+* most js libs use signals now but react not
 
 </div>
 
@@ -86,24 +93,10 @@ LangGraph-GUI 1.0 using reactflow
   * code numbers usually fewer than react
   * easy to pass computed runes
 * SvelteFlow 1.0 highly affinity svelt 5 rune, signals
+* fewer and more beautiful lines
 
 </div>
 
-
-
-<div class="slide">
-
-## Why xyflow
-
-
-* use Node to represent Edges
-<iframe class="my-iframe" width="700" height="200" src="dataflow.html" style="background-color: white; display: inline;"></iframe>
-
-* node design
-
-<img src="./node_in_ts.webp" width="350">
-
-</div>
 
 <div class="slide">
 
@@ -118,30 +111,10 @@ LangGraph-GUI 1.0 using reactflow
 
 
 
-
 <div class="slide">
 
-## make SSOT
-* hard to sync Redux and Context
-* data update flow cannot align SSOT design
-* not only nodes, but also edges need update seperatly
-
-### Conclusion
-redux is not affinity with React
-
-</div>
-
-<div class="slide">
-
-## Why SvelteFlow
-
-<img src="https://svelteflow.dev/opengraph-image.jpg" height="200">
-
-* Svelte 5 is signals design
-  * code numbers usually fewer than react
-  * easy to pass computed runes
-* SvelteFlow 1.0 highly affinity svelt 5
-  * use rune, signals features
+## Svelte Elegant
+sample code: https://github.com/LangGraph-GUI/LangGraph-GUI-Svelte/blob/b56130696bc4e4202f3a4ffa013ef1a8d73aee35/src/routes/graph/flow/graphs.store.svelte.ts
 
 </div>
 
@@ -149,16 +122,13 @@ redux is not affinity with React
 <div class="slide">
 
 ## Simple Demo
-  <div class="embed_youtube" yt-title="simple demo" yt-url="QpJ37k8yquA" yt-width="700">demo
-  </div>
-  
+
+<img src="../COSCUP/extend-demo.gif">
 
 </div>
 
 
-
 <div class="slide">
-
 
 ## END
 
