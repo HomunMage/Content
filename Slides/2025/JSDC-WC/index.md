@@ -1,31 +1,14 @@
 ---
-title: Let's Play with Lit 3! Using AI to Help Write Web Components
+title: Let's Play with Web Components
 ---
-
 
 <div class="slide">
 
-## Let's Play with Lit 3! Using AI to Help Write Web Components
+## Let's Play Web Components, using Lit3 or Svelte
 
 <img src="https://lit.dev/images/logo.svg" style="background-color: white; height: 300px; border: 10px solid white;">
 
-
 </div>
-
-<div class="slide">
-
-## My Examples
-
-
-origin Jekyll: [ https://jekyll.github.io/minima/ ](https://jekyll.github.io/minima/)
-
-my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaTool/](https://homun.posetmage.com/Tools/OS/Container/MediaTool/)
-
-
-
-</div>
-
-
 
 <div class="slide">
 
@@ -60,7 +43,7 @@ my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaToo
 
 <div class="slide">
 
-## Pros and Cons
+## Lit Pros and Cons
 * Pros of Lit
   * Highly Reusable
   * <span style="font-size: 1.5em;">Progressive like Vue</span>
@@ -75,20 +58,31 @@ my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaToo
 
 </div>
 
+
 <div class="slide">
 
-## Svelte
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg
-" style="background-color: white; height: 100px;">
+## Why choose Svelte
+* Can compiled with vite
+  * very easy to set github-actions
+* align with svelte
+
+</div>
+
+<div class="slide">
+
+## My Examples
+
+This slide system
 
 my origin lit3 wc: [https://github.com/PosetMage/cdn/tree/main/lit3](https://github.com/PosetMage/cdn/tree/main/lit3)
 
 my svelte ver wc: [https://github.com/PosetMage/wc](https://github.com/PosetMage/wc)
 
+my Jekyll blog exmaple: [https://homun.posetmage.com/Tools/OS/Container/MediaTool/](https://homun.posetmage.com/Tools/OS/Container/MediaTool/)
+
+
 
 </div>
-
-
 
 
 <div class="slide">
@@ -98,8 +92,5 @@ my svelte ver wc: [https://github.com/PosetMage/wc](https://github.com/PosetMage
 Thank You
 
 </div>
-
-
-
 
 <script src="https://posetmage.com/cdn/js/EmbedYoutubeVideo.js">

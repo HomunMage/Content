@@ -5,8 +5,7 @@ title: use SvelteFlow to create AI workflow visualized node-edge graph GUI edito
 
 <div class="slide">
 
-## use SvelteFlow to create AI workflow
-<p style="font-size: 2em;"> visualized node-edge graph GUI editor</p>
+## visualized node-edge graph GUI editor
 
 
 <img src="https://langgraph-gui.github.io/cover.webp" width="700">
@@ -35,19 +34,66 @@ and self-host, more flexibity, use langgraph
 
 ## Similar Base libs
 
-<img src="./crew-ai.webp" width="400">
+<img src="./crew-ai.webp" width="300"><img src="https://www.js-craft.io/wp-content/uploads/2025/03/langchain-vs-langgraph.webp" width="300">
 
-<img src="https://www.js-craft.io/wp-content/uploads/2025/03/langchain-vs-langgraph.webp" width="500">
+</div>
+
+
+<div class="slide">
+
+## Why xyflow
+
+xyflow is mature js library (svelteflow, reactflow)
+
+<img src="https://user-images.githubusercontent.com/2857535/279644026-a01c231c-6c6e-4b41-96e0-a85c75c9acee.svg#gh-dark-mode-only">
+
+</div>
+
+
+<div class="slide">
+
+## Choose ReactFlow
+
+<img src="https://user-images.githubusercontent.com/3797215/156259138-fb9f59f8-52f2-474a-b78c-6570867e4ead.svg" height="300">
+
+* React have large ecosystem and community
+* Graph GUI with node edge design
+* flexibity enough for make it as editor
+
+</div>
+
+
+<div class="slide">
+
+## The Jourery of ReactFlow
+
+LangGraph-GUI 1.0 using reactflow
+
+### Hard to make SSOT
+* hard to sync Redux and React Context
+* data update flow cannot align SSOT design
+* not only nodes, but also edges need update seperatly
+
+</div>
+
+<div class="slide">
+
+## Why SvelteFlow
+
+<img src="https://svelteflow.dev/opengraph-image.jpg" height="300">
+
+* Svelte 5 using signals
+  * code numbers usually fewer than react
+  * easy to pass computed runes
+* SvelteFlow 1.0 highly affinity svelt 5 rune, signals
 
 </div>
 
 
 
-
-
 <div class="slide">
 
-## My Design
+## Why xyflow
 
 
 * use Node to represent Edges
@@ -57,8 +103,20 @@ and self-host, more flexibity, use langgraph
 
 <img src="./node_in_ts.webp" width="350">
 
+</div>
+
+<div class="slide">
+
+## Final Design
+[LangGraph-GUI-Svelte](https://github.com/LangGraph-GUI/LangGraph-GUI-Svelte)
+
+* Nodes are SSOT
+  * edges is readonly, nodes update will trigger edges
+  * no need redux, just use writable
 
 </div>
+
+
 
 
 <div class="slide">
@@ -91,8 +149,6 @@ redux is not affinity with React
 <div class="slide">
 
 ## Simple Demo
-
-  
   <div class="embed_youtube" yt-title="simple demo" yt-url="QpJ37k8yquA" yt-width="700">demo
   </div>
   
