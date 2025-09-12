@@ -77,11 +77,12 @@ xyflow is mature js library (svelteflow, reactflow)
 LangGraph-GUI 1.0 using reactflow
 
 * Hard to make SSOT
+  * **ReactFlow not support signal-like logic**
   * hard to sync Redux and React Context
   * data update flow cannot align SSOT design
   * not only nodes, but also edges need update seperatly
 * Code lines more longer
-* most js libs use signals now but react not
+
 
 <img src="./reactflow.webp">
 
@@ -101,35 +102,19 @@ LangGraph-GUI 1.0 using reactflow
 
 </div>
 
-
 <div class="slide">
 
-## Final Design
-[LangGraph-GUI-Svelte](https://github.com/LangGraph-GUI/LangGraph-GUI-Svelte)
-
-* Nodes are SSOT
-  * edges is readonly, nodes update will trigger edges
-  * no need redux, just use writable
-
-</div>
-
-
-
-<div class="slide">
-
-## Svelte Elegant
+## Svelte is Elegant
 
 [sample code](https://github.com/LangGraph-GUI/LangGraph-GUI-Svelte/blob/b56130696bc4e4202f3a4ffa013ef1a8d73aee35/src/routes/graph/flow/graphs.store.svelte.ts)
 
-signal chain: **Node** --> **Edge** --> **SvelteFlow**
+signal chain: **Node**(SSOT) --> **Edge** --> **SvelteFlow**
 
 <img src="./currentEdges.webp">
 
 <img src="./SvelteFlowTypes.webp">
 
-
 </div>
-
 
 <div class="slide">
 
