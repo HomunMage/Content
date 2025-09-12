@@ -6,7 +6,8 @@ title: Let's Play with Web Components
 
 ## Let's Play Web Components, using Lit3 or Svelte
 
-<img src="https://lit.dev/images/logo.svg" style="background-color: white; height: 300px; border: 10px solid white;">
+<img src="https://avatars.githubusercontent.com/u/1905708" style="background-color: white; height: 300px;">
+
 
 </div>
 
@@ -17,8 +18,7 @@ title: Let's Play with Web Components
 #### What is w3c? 
   * W3C (World Wide Web Consortium)
   * W3C defines what Web Components are.
-
-<img src="https://avatars.githubusercontent.com/u/1905708" style="background-color: white; height: 64px;">
+  * <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/210px-W3C%C2%AE_Icon.svg.png" style="background-color: white; height: 64px;">
 
 #### What is Web Components ? 
   * Web Components = **Custom Elements** + **Shadow DOM** + **HTML Templates**
@@ -44,6 +44,9 @@ title: Let's Play with Web Components
 <div class="slide">
 
 ## Lit Pros and Cons
+
+<img src="https://lit.dev/images/logo.svg" style="background-color: white; height: 64px; border: 10px solid white;">
+
 * Pros of Lit
   * Highly Reusable
   * <span style="font-size: 1.5em;">Progressive like Vue</span>
@@ -62,6 +65,9 @@ title: Let's Play with Web Components
 <div class="slide">
 
 ## Why choose Svelte
+
+<img src="https://raw.githubusercontent.com/gaia-green-tech/svelte-ackee/HEAD/img/svelte-logo.png" style="background-color: white; height: 64px; border: 10px solid white;">
+
 * Can compiled with vite
   * very easy to set github-actions
 * align with svelte
