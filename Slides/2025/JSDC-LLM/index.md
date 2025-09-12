@@ -114,7 +114,15 @@ LangGraph-GUI 1.0 using reactflow
 <div class="slide">
 
 ## Svelte Elegant
-sample code: https://github.com/LangGraph-GUI/LangGraph-GUI-Svelte/blob/b56130696bc4e4202f3a4ffa013ef1a8d73aee35/src/routes/graph/flow/graphs.store.svelte.ts
+
+[sample code](https://github.com/LangGraph-GUI/LangGraph-GUI-Svelte/blob/b56130696bc4e4202f3a4ffa013ef1a8d73aee35/src/routes/graph/flow/graphs.store.svelte.ts)
+
+signal chain: **Node** --> **Edge** --> **SvelteFlow**
+
+<img src="./currentEdges.webp">
+
+<img src="./SvelteFlowTypes.webp">
+
 
 </div>
 
