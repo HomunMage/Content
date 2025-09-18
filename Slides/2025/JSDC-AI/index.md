@@ -2,6 +2,9 @@
 title: Use SvelteFlow to Create AI Workflow Visualized Node-Edge Graph GUI Editor
 ---
 
+<script src="https://posetmage.com/cdn/js/jekyll/injectMermaid.js"></script>
+
+
 <div class="slide">
 
 ## Use SvelteFlow to Create AI Workflow Visualized Node-Edge Graph GUI Editor
@@ -48,7 +51,8 @@ xyflow is mature js library (svelteflow, reactflow)
 <img src="https://user-images.githubusercontent.com/2857535/279644026-a01c231c-6c6e-4b41-96e0-a85c75c9acee.svg#gh-dark-mode-only">
 
 * use Node to represent Edges
-<iframe class="my-iframe" width="700" height="200" src="dataflow.html" style="background-color: white; display: inline;"></iframe>
+<div class="inject-mermaid" file="./ssot.mmd" style="background-color: white;"></div>
+
 
 * node design
 
@@ -83,8 +87,9 @@ LangGraph-GUI 1.0 using reactflow
   * not only nodes, but also edges need update seperatly
 * Code lines more longer
 
-
 <img src="./reactflow.webp">
+
+  <div class="inject-mermaid" file="./redux.mmd" style="background-color: white;"></div>
 
 </div>
 
@@ -109,6 +114,7 @@ LangGraph-GUI 1.0 using reactflow
 [sample code](https://github.com/LangGraph-GUI/LangGraph-GUI-Svelte/blob/b56130696bc4e4202f3a4ffa013ef1a8d73aee35/src/routes/graph/flow/graphs.store.svelte.ts)
 
 signal chain: **Node**(SSOT) --> **Edge** --> **SvelteFlow**
+<div class="inject-mermaid" file="./svelte.mmd" style="background-color: white;"></div>
 
 <img src="./currentEdges.webp">
 
