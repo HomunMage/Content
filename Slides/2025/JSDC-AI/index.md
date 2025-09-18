@@ -118,9 +118,20 @@ signal chain: **Node**(SSOT) --> **Edge** --> **SvelteFlow**
 
 <div class="slide">
 
+## Svelte is Elegant (cont.)
+
+define your own signal object:
+
+<img src="./signal.webp">
+
+</div>
+
+
+<div class="slide">
+
 ## Simple Demo
 
-<img src="../COSCUP/extend-demo.gif">
+<img src="../COSCUP/langgraph-gui-demo.gif">
 
 </div>
 
