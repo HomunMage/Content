@@ -46,12 +46,14 @@ But all of these not have official GUI, we need create by ourself.
 
 ## Why xyflow
 
-xyflow is mature js library (svelteflow, reactflow)
 
-<img src="https://user-images.githubusercontent.com/2857535/279644026-a01c231c-6c6e-4b41-96e0-a85c75c9acee.svg#gh-dark-mode-only">
+use Node to represent Edges
+<div class="inject-mermaid" file="./graph.mmd" style="background-color: white;"></div>
 
-* use Node to represent Edges
-<div class="inject-mermaid" file="./ssot.mmd" style="background-color: white;"></div>
+
+xyflow is mature js graph library (svelteflow, reactflow)
+
+<img src="https://user-images.githubusercontent.com/2857535/279644026-a01c231c-6c6e-4b41-96e0-a85c75c9acee.svg#gh-dark-mode-only" width="500">
 
 
 * node design
@@ -65,7 +67,7 @@ xyflow is mature js library (svelteflow, reactflow)
 
 ## Choose ReactFlow
 
-<img src="https://user-images.githubusercontent.com/3797215/156259138-fb9f59f8-52f2-474a-b78c-6570867e4ead.svg" height="300">
+<img src="https://user-images.githubusercontent.com/3797215/156259138-fb9f59f8-52f2-474a-b78c-6570867e4ead.svg" width="500">
 
 * React have large ecosystem and community
 * Graph GUI with node edge design
@@ -97,7 +99,7 @@ LangGraph-GUI 1.0 using reactflow
 
 ## Why SvelteFlow
 
-<img src="https://svelteflow.dev/opengraph-image.jpg" height="300">
+<img src="https://svelteflow.dev/opengraph-image.jpg" width="500">
 
 * Svelte 5 using signals
   * code numbers usually fewer than react
