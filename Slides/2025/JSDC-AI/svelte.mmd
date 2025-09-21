@@ -1,17 +1,17 @@
 %% Code for flowchart below
 graph LR
-    store[store Nodes]
+    ssot[SSOT Nodes]
 
     A[Modify Nodes]
     B[Modify Edges]
     
-    A --modify--> store
-    B --update--> store
-    store --signals--> edges
+    A --modify--> ssot
+    B --update--> ssot
+    ssot --signals--> edges
 
-    graphs[graphs.json]
     backend[Backend]
 
-    store --store--> graphs
-    graphs --> backend
-    graphs --load--> store
+    ssot --"run graphs.json"--> backend
+
+    outputs((LLM\nOutputs))
+    backend --> outputs
