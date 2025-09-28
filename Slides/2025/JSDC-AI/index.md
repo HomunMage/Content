@@ -3,6 +3,7 @@ title: Use SvelteFlow to Create AI Workflow Visualized Node-Edge Graph GUI Edito
 ---
 
 <script src="https://posetmage.com/cdn/js/jekyll/injectMermaid.js"></script>
+<script src="https://posetmage.com/cdn/js/EmbedYoutubeVideo.js"></script>
 
 
 <div class="slide">
@@ -33,10 +34,25 @@ and self-host, more flexibity, use langgraph
 
 <div class="slide">
 
-## core concept
+## The Core Problem: Why Build Another One?
 
-use Nodes as SSOT to represent Edges
-<div class="inject-mermaid" file="./graph.mmd" style="background-color: white;"></div>
+Although existing platforms are powerful, they commonly suffer from several pain points:
+
+* **Vendor Lock-in**: Core logic is deeply integrated with specific cloud services, making migration difficult.
+* **Limited Extensibility**: Hard to easily integrate custom tools or models.
+* **Opaque Logic**: Lack of full visibility into the internal workings of the agent, making debugging challenging.
+* **Cost**: Large-scale usage in production environments can become prohibitively expensive.
+
+</div>
+
+<div class="slide">
+
+## Why Is Visual Programming Needed?
+
+* Lower the Technical Barrier
+* Improve Development Efficiency
+* Facilitate Team Collaboration
+* Reduce Configuration Errors
 
 </div>
 
@@ -46,21 +62,41 @@ use Nodes as SSOT to represent Edges
 
 <img src="./crew-ai.webp" width="300"><img src="https://www.js-craft.io/wp-content/uploads/2025/03/langchain-vs-langgraph.webp" width="300">
 
-* **CrewAI**: Multi-agent focus, role-based, cannot loop, condition
-* **LangChain**: Linear chains, limited branching
-* **LangGraph**: True graph structures, conditional routing
 
-all of these not have official GUI, we need create by ourself.
+| Feature | CrewAI | LangChain | LangGraph |
+|---------|---------|-----------|-----------|
+| Graph Support | ❌ Limited | ⚠️ Linear chains | ✅ Full graphs |
+| Loops | ❌ No | ❌ No | ✅ Yes |
+| Conditions | ❌ No | ⚠️ Limited | ✅ Yes |
+| Multi-agent | ✅ Yes | ⚠️ Basic | ✅ Yes |
+| GUI Support | ❌ No | ❌ No | ❌ No |
+
+**all of these not have official GUI, we need create by ourself.**
 
 </div>
 
 <div class="slide">
 
-## First try 
+## core design
+
+use Nodes as SSOT to represent Edges
+<div class="inject-mermaid" file="./graph.mmd" style="background-color: white;"></div>
+
+</div>
+
+<div class="slide">
+
+## Evolution: From PyQt to Web-Based Solution
 
 CrewAI-GUI-pyQt
 
 <img src="https://github.com/LangGraph-GUI/CrewAI-GUI-Qt/raw/main/frontend.webp" width="500">
+
+**Limitations**:
+- Desktop-only deployment
+- Limited web integration
+- Harder to collaborate
+- Less familiar developer ecosystem
 
 </div>
 
@@ -78,6 +114,18 @@ CrewAI-GUI-pyQt
 * Infrastructure
   * Kubernetes <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/1055px-Kubernetes_logo_without_workmark.svg.png" height="24">
   * Docker Compose <img src="https://i0.wp.com/codeblog.dotsandbrackets.com/wp-content/uploads/2016/10/compose-logo.jpg" height="32">
+</div>
+
+<div class="slide">
+
+## LangGraph.js
+
+https://langchain-ai.github.io/langgraphjs/
+
+```
+npx create-agent-chat-app@latest
+```
+
 </div>
 
 <div class="slide">
@@ -219,7 +267,14 @@ LangGraph-GUI 1.0 using reactflow
 ```js
 // lib/json.ts
 
-export type Json = string | number | boolean | null | Json[] | { [key: string]: Json };
+export type Json = 
+  | string 
+  | number 
+  | boolean 
+  | null 
+  | Json[] 
+  | { [key: string]: Json };
+
 ```
 
 </div>
@@ -244,7 +299,48 @@ export type Json = string | number | boolean | null | Json[] | { [key: string]: 
 
 ## Signals
 
-<img src="signals.webp" width="600">
+<img src="signals.webp" width="800">
+
+<img src="signals-TC39.webp" width="800">
+
+</div>
+
+<div class="slide">
+
+## Signals
+
+* Reactive Value
+* A signal is essentially a wrapped value. Anywhere it is read, dependencies are automatically subscribed.
+  * Updating a signal → automatically notifies its dependents → triggers UI updates or recomputations.
+* Computed Signals (Derived Values)
+  * A computed signal is a value derived from other signals.
+* Effect / Reaction (Side Effects)
+  * When signals change, they can trigger effects such as updating the DOM or calling an API.
+
+| Framework / Library   | **signal**                  | **computed**                 | **effect**                      |
+| --------------------- | --------------------------- | ---------------------------- | ------------------------------- |
+| **Solid.js**          | `createSignal`              | `createMemo`                 | `createEffect`                  |
+| **Angular (v16+)**    | `signal()`                  | `computed()`                 | `effect()`                      |
+| **Preact Signals**    | `signal()`                  | `computed()`                 | `effect()`                      |
+| **Vue 3**             | `ref` / `reactive`          | `computed`                   | `watchEffect`                   |
+| **Svelte 5**          | `$state` / `writable` store | `$derived` / `derived` store | `$effect` / `$:` declaration    |
+
+
+</div>
+
+<div class="slide">
+
+## llms.txt
+
+* With `llms.txt`, LLMs know:  
+  * where to look (core guides, API, examples)  
+  * what to skip (noise, menus, ads)  
+  * like `robots.txt` but for AI  
+* For Svelte devs:  
+  * Signals make UI state simple  
+  * llms.txt makes docs simple for AI  
+
+<img src="./llms_txt.webp">
 
 </div>
 
@@ -302,6 +398,24 @@ define your own signal object:
 
 <div class="slide">
 
+## Extend Demo
+
+<img src="../COSCUP/extend-demo.gif">
+
+</div>
+
+<div class="slide">
+
+## Extend Demo
+
+  <div class="embed_youtube" yt-title="extend demo" yt-url="sPl3J3ads0s" yt-width="700">Loading content...
+  </div>
+
+</div>
+
+<div class="slide">
+
+
 ## END
 
 <p style="font-size: 3em;">Thank You</p>
@@ -316,4 +430,3 @@ define your own signal object:
 
 </div>
 
-<script src="https://posetmage.com/cdn/js/EmbedYoutubeVideo.js">
