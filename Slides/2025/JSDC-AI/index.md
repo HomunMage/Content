@@ -118,18 +118,6 @@ CrewAI-GUI-pyQt
 
 <div class="slide">
 
-## LangGraph.js
-
-https://langchain-ai.github.io/langgraphjs/
-
-```
-npx create-agent-chat-app@latest
-```
-
-</div>
-
-<div class="slide">
-
 ## backend API
 
 If your backend have JWT, you can switch by username
@@ -151,7 +139,16 @@ post /run/{username}
 
 <div class="slide">
 
-## Node Design
+## LangGraph.js
+
+<img src="langgraph-js.webp" width="800">
+
+</div>
+
+
+<div class="slide">
+
+## Graph Data Strcture Design
 
 <img src="./node_in_ts.webp" width="320"><img src="./node_in_json.webp" width="300">
 
