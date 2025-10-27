@@ -58,6 +58,19 @@ Although existing platforms are powerful, they commonly suffer from several pain
 
 <div class="slide">
 
+## Time Flies......
+
+OpenAI AgentKit
+
+<img src="https://images.ctfassets.net/kftzwdyauwt9/4VjOJxeZ7prpcZftRJ5MPd/582d98bb0151362f998b44d473dacae0/Visual__Agent_Builder_Template_Assets.png?w=1920&q=90&fm=webp">
+
+
+
+</div>
+
+
+<div class="slide">
+
 ## Similar LLM libs
 
 <img src="./crew-ai.webp" width="300"><img src="https://www.js-craft.io/wp-content/uploads/2025/03/langchain-vs-langgraph.webp" width="300">
